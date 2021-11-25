@@ -1,0 +1,133 @@
+/* GENERALS */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(../img/balls_1.jpg);
+    display: grid;
+    place-items: center;
+}
+
+/* CONTAINER */
+
+.container{
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 12px 0px #0000006b;
+}
+
+/* FORM */
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input{
+    width: 300px;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-bottom: .7rem;
+    border: 2px solid lightgrey;
+    border-radius: .2rem;
+}
+
+.form__input:focus-visible{
+    outline: 2px solid lightgrey;
+}
+
+.form__button{
+    width: 300px;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: .9rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    margin-bottom: .6rem;
+    transition: hover .7s ease-in;
+
+}
+
+.form__button:hover{
+    background-color: rgb(28 135 28);
+}
+
+button.form__button:hover{
+    background-color: #e71717;
+}
+
+/* SECTION */
+
+.lucky{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+}
+
+.balls__container{
+    display: flex;
+    justify-content: center;
+}
+
+.balls{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-left: .7rem;
+    position: relative;
+}
+
+.balls > *{
+    position: relative;
+    z-index: 999;
+}
+
+
+.balls::after{
+    content: "";
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
