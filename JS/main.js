@@ -19,9 +19,9 @@ btn.addEventListener('click', (e) => {
 
 /* Key ENTER ----> Search random numbers */
 
-input.addEventListener('keyup', function(e){
+input.addEventListener('keyup', function (e) {
   let keycode = e.keyCode;
-  if(keycode == 13){
+  if (keycode == 13) {
     numeroRandom()
   }
 })

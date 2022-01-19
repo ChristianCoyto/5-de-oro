@@ -1,16 +1,16 @@
 /* GENERALS */
 
-*{
+* {
     box-sizing: border-box;
 }
 
-html, body{
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: sans-serif;
     background-image: url(../img/balls_1.jpg);
     display: grid;
@@ -19,7 +19,7 @@ body{
 
 /* CONTAINER */
 
-.container{
+.container {
     background-color: white;
     padding: 2rem;
     display: flex;
@@ -31,12 +31,12 @@ body{
 
 /* FORM */
 
-.form__container{
+.form__container {
     display: flex;
     flex-direction: column;
 }
 
-.form__input{
+.form__input {
     width: 300px;
     font-size: 1.3rem;
     padding: 1rem;
@@ -45,11 +45,11 @@ body{
     border-radius: .2rem;
 }
 
-.form__input:focus-visible{
+.form__input:focus-visible {
     outline: 2px solid lightgrey;
 }
 
-.form__button{
+.form__button {
     width: 300px;
     border: none;
     background-color: green;
@@ -64,28 +64,28 @@ body{
 
 }
 
-.form__button:hover{
+.form__button:hover {
     background-color: rgb(28 135 28);
 }
 
-button.form__button:hover{
+button.form__button:hover {
     background-color: #e71717;
 }
 
 /* SECTION */
 
-.lucky{
+.lucky {
     font-size: 3.5rem;
     text-shadow: 2px 2px 4px black;
     text-align: center;
 }
 
-.balls__container{
+.balls__container {
     display: flex;
     justify-content: center;
 }
 
-.balls{
+.balls {
     width: 100px;
     height: 100px;
     display: flex;
@@ -97,13 +97,13 @@ button.form__button:hover{
     position: relative;
 }
 
-.balls > *{
+.balls>* {
     position: relative;
     z-index: 999;
 }
 
 
-.balls::after{
+.balls::after {
     content: "";
     width: 55px;
     height: 55px;
@@ -112,22 +112,22 @@ button.form__button:hover{
     position: absolute;
 }
 
-.red{
+.red {
     background-color: red;
 }
 
-.blue{
+.blue {
     background-color: blue;
 }
 
-.purple{
+.purple {
     background-color: purple;
 }
 
-.yellow{
+.yellow {
     background-color: yellow;
 }
 
-.green{
+.green {
     background-color: green;
 }
